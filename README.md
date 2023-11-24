@@ -16,7 +16,8 @@ use it with your python interpreter :
 use it flag pour enter your command iteractively or check with your instructions
 
 ### it flag
-![Capture d'écran 2023-11-24 141519](https://github.com/TulipeSoyeuse/push_swap_emulator/assets/96928909/e204571c-46c0-42df-90ed-8dce232802f2)
+![it flag screen](https://github.com/TulipeSoyeuse/push_swap_emulator/assets/96928909/4151e53a-11eb-452d-aee9-5d6c95654607)
+
 
 ### check flag
-![Capture d'écran 2023-11-24 141749](https://github.com/TulipeSoyeuse/push_swap_emulator/assets/96928909/360da85c-7564-43ea-96e9-14568fd97102)
+![check flag screen](https://github.com/TulipeSoyeuse/push_swap_emulator/assets/96928909/93415216-5f01-4f5d-b70e-530b3a852571)
