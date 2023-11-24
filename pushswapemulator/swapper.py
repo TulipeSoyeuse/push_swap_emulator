@@ -1,8 +1,11 @@
-from .utils import *
 from collections import deque
+
 from colorama import Fore, init
 
+from .utils import *
+
 init(autoreset=True)
+
 
 class Swapper:
     def __init__(self, stack: list):
@@ -18,7 +21,7 @@ class Swapper:
         self.len = len(stack)
 
     def is_solved(self):
-        return (sorted(self.ref) == list(self.stack_a))
+        return sorted(self.ref) == list(self.stack_a)
 
     def sa(self):
         if len(self.stack_a) < 2:
@@ -67,8 +70,8 @@ class Swapper:
         self.moves += 1
 
     def parse_input(self, input_):
-        match input_ :
-            case "sa" :
+        match input_:
+            case "sa":
                 self.sa()
             case "sb":
                 self.sb()
@@ -97,12 +100,14 @@ class Swapper:
                 return f"{input_}:  unrecognized input"
 
     def display_env(self, cmd: str):
-        print(Fore.RED + "-" * 9,Fore.RED + "ENV",Fore.RED + "-" * 9)
-        print(f"command : {cmd}")
-        print()
+        print(Fore.RED + "-" * 9, Fore.RED + "ENV", Fore.RED + "-" * 9)
+        if cmd:
+            print(f"command : {cmd}\n")
         print(" _                  _")
         for i in range(self.len):
-            print(f"|{self.stack_a[i] if len(self.stack_a) > i else ' '}|\
-                |{self.stack_b[i] if len(self.stack_b) > i else ' '}|")
+            print(
+                f"|{self.stack_a[i] if len(self.stack_a) > i else ' '}|\
+                |{self.stack_b[i] if len(self.stack_b) > i else ' '}|"
+            )
         print("|_|                |_|")
         print(Fore.RED + f"MOVES:{self.moves}")
