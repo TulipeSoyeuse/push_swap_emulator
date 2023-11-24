@@ -1,7 +1,7 @@
 from utils import *
 from collections import deque
 
-class Swapper(Utils):
+class Swapper:
     def __init__(self, stack: list):
         """replicateur of the swap push function
         Args:
