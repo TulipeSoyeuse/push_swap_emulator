@@ -7,10 +7,11 @@ first clone this repository
 then install it with your python package manager
 poetry :
 
-````poetry install push_swap_emulator``
+```poetry install push_swap_emulator```
+
 pip :
 
-````pip3 install push_swap_emulator``
+````pip3 install push_swap_emulator````
 
 ##USE
 
