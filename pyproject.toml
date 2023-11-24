@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "push-swap emulator"
+name = "pushswapemulator"
 version = "0.1.0"
 description = "emulator for the push swap exercice"
 authors = ["tulipeSoyeuse <romain.dupeux24@gmail.com>"]
