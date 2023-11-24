@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "push-swap emulator"
+version = "0.1.0"
+description = "emulator for the push swap exercice"
+authors = ["tulipeSoyeuse <romain.dupeux24@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
