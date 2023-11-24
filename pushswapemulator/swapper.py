@@ -51,8 +51,7 @@ class Swapper:
             self.moves += 1
 
     def ra(self):
-        a = self.stack_a.popleft()
-        self.stack_a.append(a)
+        self.stack_a.rotate()
         self.moves += 1
 
     def rb(self):
@@ -60,12 +59,11 @@ class Swapper:
         self.moves += 1
 
     def rra(self):
-        self.stack_a.rotate()
+        self.stack_a.rotate(-1)
         self.moves += 1
 
     def rrb(self):
-        a = self.stack_b.pop()
-        self.stack_b.appendleft(a)
+        self.stack_b.rotate(-1)
         self.moves += 1
 
     def parse_input(self, input_):
