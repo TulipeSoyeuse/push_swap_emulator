@@ -13,6 +13,6 @@ pip :
 ## USE
 
 use it with your python interpreter :
-````python3 -m pushswapemulator [your stack]``
+```python3 -m pushswapemulator [your stack]```
 
 use it flag pour enter your command iteractively or check with your instructions
