@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pushswapemulator"
-version = "0.1.0"
+version = "1.0.0"
 description = "emulator for the push swap exercice"
 authors = ["tulipeSoyeuse <romain.dupeux24@gmail.com>"]
 readme = "README.md"

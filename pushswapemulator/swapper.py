@@ -20,6 +20,12 @@ class Swapper:
         self.moves = 0
         self.len = len(stack)
 
+    def reset(self):
+        self.stack_a = deque(self.ref)
+        self.stack_b = deque()
+        self.moves = 0
+        self.display_env()
+
     def is_solved(self):
         return sorted(self.ref) == list(self.stack_a)
 
@@ -54,23 +60,27 @@ class Swapper:
             self.moves += 1
 
     def ra(self):
-        self.stack_a.rotate()
-        self.moves += 1
-
-    def rb(self):
-        self.stack_b.rotate()
-        self.moves += 1
-
-    def rra(self):
         self.stack_a.rotate(-1)
         self.moves += 1
 
-    def rrb(self):
+    def rb(self):
         self.stack_b.rotate(-1)
+        self.moves += 1
+
+    def rra(self):
+        self.stack_a.rotate()
+        self.moves += 1
+
+    def rrb(self):
+        self.stack_b.rotate()
         self.moves += 1
 
     def parse_input(self, input_):
         match input_:
+            case "exit":
+                exit(0)
+            case "reset":
+                self.reset()
             case "sa":
                 self.sa()
             case "sb":
@@ -99,7 +109,7 @@ class Swapper:
             case _:
                 return f"{input_}:  unrecognized input"
 
-    def display_env(self, cmd: str):
+    def display_env(self, cmd: str = None):
         print(Fore.RED + "-" * 9, Fore.RED + "ENV", Fore.RED + "-" * 9)
         if cmd:
             print(f"command : {cmd}\n")
