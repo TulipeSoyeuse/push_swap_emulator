@@ -113,11 +113,11 @@ class Swapper:
         print(Fore.RED + "-" * 9, Fore.RED + "ENV", Fore.RED + "-" * 9)
         if cmd:
             print(f"command : {cmd}\n")
-        print(" _                  _")
+        print(" _\t\t\t _")
         for i in range(self.len):
             print(
-                f"|{self.stack_a[i] if len(self.stack_a) > i else ' '}|\
-                |{self.stack_b[i] if len(self.stack_b) > i else ' '}|"
+                f"|{self.stack_a[i] if len(self.stack_a) > i else ' '}|\t\t\t\
+|{self.stack_b[i] if len(self.stack_b) > i else ' '}|"
             )
-        print("|_|                |_|")
+        print("|_|\t\t\t|_|")
         print(Fore.RED + f"MOVES:{self.moves}")
